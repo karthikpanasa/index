@@ -1,0 +1,137 @@
+/* Reset & Base */
+body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  padding-top: 20px;
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h2, h3 {
+  font-weight: 600;
+}
+
+/* Centered Layout */
+.container-fluid {
+  padding: 20px;
+}
+
+/* Welcome Heading */
+.welcome-heading {
+  font-size: 28px;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Tabs */
+.nav-tabs {
+  border: none;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-tabs .nav-link {
+  color: #00d4ff;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  margin: 3px;
+  border-radius: 10px;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #1e1e2f;
+  color: #ff4b2b;
+  border: 1px solid #ff4b2b;
+}
+
+/* Form Box */
+.form-box {
+  background: #1e1e2f;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  max-width: 100%;
+  margin: auto;
+  transition: 0.3s ease-in-out;
+  width: 100%;
+}
+
+.form-box:hover {
+  transform: scale(1.01);
+}
+
+/* Inputs */
+.form-control {
+  background-color: #2b2b3c;
+  color: white;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 15px;
+}
+
+.form-control::placeholder {
+  color: #bbb;
+}
+
+/* Checkbox label */
+.form-check-label {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Buttons */
+.btn-custom {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.btn-custom:hover {
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  transform: scale(1.05);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .form-box {
+    padding: 20px;
+  }
+
+  .nav-tabs .nav-link {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .welcome-heading {
+    font-size: 24px;
+  }
+}
+
+/* Alerts */
+.alert {
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 10px 16px;
+}
+
+/* Custom scrollbar (optional) */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #1e1e2f;
+}
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 3px;
+}
